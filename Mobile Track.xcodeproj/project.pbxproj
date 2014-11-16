@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B9F691B1A1003C00020C0D7 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F691A1A1003C00020C0D7 /* Webservice.swift */; };
+		6B9F691F1A100A590020C0D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F691E1A100A590020C0D7 /* MainViewController.swift */; };
+		6BA0690219E99DD00064E802 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA0690119E99DD00064E802 /* MapKit.framework */; };
 		6BA9E5C819DC39A700214063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5C719DC39A700214063 /* AppDelegate.swift */; };
 		6BA9E5CA19DC39A700214063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5C919DC39A700214063 /* ViewController.swift */; };
 		6BA9E5CD19DC39A700214063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5CB19DC39A700214063 /* Main.storyboard */; };
 		6BA9E5CF19DC39A700214063 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5CE19DC39A700214063 /* Images.xcassets */; };
 		6BA9E5D219DC39A700214063 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5D019DC39A700214063 /* LaunchScreen.xib */; };
 		6BA9E5DE19DC39A700214063 /* Mobile_TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5DD19DC39A700214063 /* Mobile_TrackTests.swift */; };
+		6BA9E5E819DC3D1300214063 /* track_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5E719DC3D1300214063 /* track_logo.png */; };
+		6BC500081A18DC4700C4B9AB /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC500071A18DC4700C4B9AB /* Usuario.swift */; };
+		6BC5000B1A18DE0300C4B9AB /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5000A1A18DE0300C4B9AB /* Evento.swift */; };
+		6BC5000D1A18E36C00C4B9AB /* Veiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5000C1A18E36C00C4B9AB /* Veiculo.swift */; };
+		6BC500101A18F81A00C4B9AB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5000F1A18F81A00C4B9AB /* Login.swift */; };
+		6BC500121A18FB4400C4B9AB /* Veiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC500111A18FB4400C4B9AB /* Veiculos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B9F691A1A1003C00020C0D7 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		6B9F691E1A100A590020C0D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6BA0690119E99DD00064E802 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6BA9E5C219DC39A700214063 /* Mobile Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA9E5C619DC39A700214063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA9E5C719DC39A700214063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +48,12 @@
 		6BA9E5D719DC39A700214063 /* Mobile TrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile TrackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA9E5DC19DC39A700214063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA9E5DD19DC39A700214063 /* Mobile_TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_TrackTests.swift; sourceTree = "<group>"; };
+		6BA9E5E719DC3D1300214063 /* track_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track_logo.png; sourceTree = "<group>"; };
+		6BC500071A18DC4700C4B9AB /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		6BC5000A1A18DE0300C4B9AB /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		6BC5000C1A18E36C00C4B9AB /* Veiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Veiculo.swift; sourceTree = "<group>"; };
+		6BC5000F1A18F81A00C4B9AB /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6BC500111A18FB4400C4B9AB /* Veiculos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Veiculos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA0690219E99DD00064E802 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 		6BA9E5B919DC39A700214063 = {
 			isa = PBXGroup;
 			children = (
+				6BA0690119E99DD00064E802 /* MapKit.framework */,
 				6BA9E5C419DC39A700214063 /* Mobile Track */,
 				6BA9E5DA19DC39A700214063 /* Mobile TrackTests */,
 				6BA9E5C319DC39A700214063 /* Products */,
@@ -77,12 +97,16 @@
 		6BA9E5C419DC39A700214063 /* Mobile Track */ = {
 			isa = PBXGroup;
 			children = (
+				6BC5000E1A18E47100C4B9AB /* Data Access */,
+				6BC500091A18DDEC00C4B9AB /* Entidades */,
+				6BA9E5E919DC3D1900214063 /* resources */,
 				6BA9E5C719DC39A700214063 /* AppDelegate.swift */,
 				6BA9E5C919DC39A700214063 /* ViewController.swift */,
 				6BA9E5CB19DC39A700214063 /* Main.storyboard */,
 				6BA9E5CE19DC39A700214063 /* Images.xcassets */,
 				6BA9E5D019DC39A700214063 /* LaunchScreen.xib */,
 				6BA9E5C519DC39A700214063 /* Supporting Files */,
+				6B9F691E1A100A590020C0D7 /* MainViewController.swift */,
 			);
 			path = "Mobile Track";
 			sourceTree = "<group>";
@@ -110,6 +134,34 @@
 				6BA9E5DC19DC39A700214063 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BA9E5E919DC3D1900214063 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BA9E5E719DC3D1300214063 /* track_logo.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		6BC500091A18DDEC00C4B9AB /* Entidades */ = {
+			isa = PBXGroup;
+			children = (
+				6BC500071A18DC4700C4B9AB /* Usuario.swift */,
+				6BC5000A1A18DE0300C4B9AB /* Evento.swift */,
+				6BC5000C1A18E36C00C4B9AB /* Veiculo.swift */,
+			);
+			name = Entidades;
+			sourceTree = "<group>";
+		};
+		6BC5000E1A18E47100C4B9AB /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				6B9F691A1A1003C00020C0D7 /* Webservice.swift */,
+				6BC5000F1A18F81A00C4B9AB /* Login.swift */,
+				6BC500111A18FB4400C4B9AB /* Veiculos.swift */,
+			);
+			name = "Data Access";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +213,7 @@
 				TargetAttributes = {
 					6BA9E5C119DC39A700214063 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = J327V4Q68P;
 					};
 					6BA9E5D619DC39A700214063 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -194,6 +247,7 @@
 			files = (
 				6BA9E5CD19DC39A700214063 /* Main.storyboard in Resources */,
 				6BA9E5D219DC39A700214063 /* LaunchScreen.xib in Resources */,
+				6BA9E5E819DC3D1300214063 /* track_logo.png in Resources */,
 				6BA9E5CF19DC39A700214063 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC5000D1A18E36C00C4B9AB /* Veiculo.swift in Sources */,
+				6BC500121A18FB4400C4B9AB /* Veiculos.swift in Sources */,
+				6BC5000B1A18DE0300C4B9AB /* Evento.swift in Sources */,
 				6BA9E5CA19DC39A700214063 /* ViewController.swift in Sources */,
 				6BA9E5C819DC39A700214063 /* AppDelegate.swift in Sources */,
+				6B9F691B1A1003C00020C0D7 /* Webservice.swift in Sources */,
+				6BC500081A18DC4700C4B9AB /* Usuario.swift in Sources */,
+				6B9F691F1A100A590020C0D7 /* MainViewController.swift in Sources */,
+				6BC500101A18F81A00C4B9AB /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Mobile Track/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Mobile Track/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +470,7 @@
 				6BA9E5E319DC39A700214063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BA9E5E419DC39A700214063 /* Build configuration list for PBXNativeTarget "Mobile TrackTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +479,7 @@
 				6BA9E5E619DC39A700214063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
