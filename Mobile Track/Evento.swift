@@ -11,7 +11,7 @@ import Foundation
 class Evento {
     var CodCliente : Int
     var CodEquipamento : Int
-    var CodEvento : Int64
+    var CodEvento : Int
     var CodVeiculo : Int
     var Hodometro : Int
     var Latitude : Double

@@ -16,7 +16,7 @@ class Veiculos {
         ws = Webservice()
     }
     
-    func VeiculosPorUsuario (CodUsuario:Int) -> Array<Veiculo>
+    func VeiculosPorUsuario (CodUsuario:Int) -> [Veiculo]
     {
         return ws.VeiculosPorCliente(CodUsuario)
     }
@@ -25,7 +25,7 @@ class Veiculos {
         return ws.UltimaLocalizacaoVeiculo(veic.CodVeiculo!)
     }
     
-    func Trajetos(DataInicial:NSDate, DataFinal:NSDate, CodVeiculo:Int) -> Array<Evento>
+    func Trajetos(DataInicial:NSDate, DataFinal:NSDate, CodVeiculo:Int) -> [Evento]
     {
         return ws.Trajetos(DataInicial, DataFinal: DataFinal, CodVeiculo: CodVeiculo)
     }

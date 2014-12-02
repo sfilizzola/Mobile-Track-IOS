@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B14BB161A279724009F1C59 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14BB151A279724009F1C59 /* SplitViewController.swift */; };
+		6B14BB181A27A3E5009F1C59 /* CarrosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14BB171A27A3E5009F1C59 /* CarrosTableViewController.swift */; };
 		6B9F691B1A1003C00020C0D7 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F691A1A1003C00020C0D7 /* Webservice.swift */; };
 		6B9F691F1A100A590020C0D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F691E1A100A590020C0D7 /* MainViewController.swift */; };
 		6BA0690219E99DD00064E802 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA0690119E99DD00064E802 /* MapKit.framework */; };
 		6BA9E5C819DC39A700214063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5C719DC39A700214063 /* AppDelegate.swift */; };
-		6BA9E5CA19DC39A700214063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5C919DC39A700214063 /* ViewController.swift */; };
+		6BA9E5CA19DC39A700214063 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5C919DC39A700214063 /* LoginViewController.swift */; };
 		6BA9E5CD19DC39A700214063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5CB19DC39A700214063 /* Main.storyboard */; };
-		6BA9E5CF19DC39A700214063 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5CE19DC39A700214063 /* Images.xcassets */; };
 		6BA9E5D219DC39A700214063 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5D019DC39A700214063 /* LaunchScreen.xib */; };
 		6BA9E5DE19DC39A700214063 /* Mobile_TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9E5DD19DC39A700214063 /* Mobile_TrackTests.swift */; };
 		6BA9E5E819DC3D1300214063 /* track_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9E5E719DC3D1300214063 /* track_logo.png */; };
+		6BB027481A290D360004E394 /* PontoMapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB027471A290D360004E394 /* PontoMapa.swift */; };
 		6BC500081A18DC4700C4B9AB /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC500071A18DC4700C4B9AB /* Usuario.swift */; };
 		6BC5000B1A18DE0300C4B9AB /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5000A1A18DE0300C4B9AB /* Evento.swift */; };
 		6BC5000D1A18E36C00C4B9AB /* Veiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5000C1A18E36C00C4B9AB /* Veiculo.swift */; };
 		6BC500101A18F81A00C4B9AB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC5000F1A18F81A00C4B9AB /* Login.swift */; };
 		6BC500121A18FB4400C4B9AB /* Veiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC500111A18FB4400C4B9AB /* Veiculos.swift */; };
+		6BD4112C1A2CDA8D0017FB9B /* TrajetosFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4112B1A2CDA8D0017FB9B /* TrajetosFormViewController.swift */; };
+		6BD82E771A26990500B0B444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD82E761A26990500B0B444 /* Images.xcassets */; };
+		6BDA7F941A2B6605002D2FB1 /* ic_list_car.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */; };
+		6BDA7F951A2B6605002D2FB1 /* ic_list_gcar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */; };
+		6BDA7F961A2B6605002D2FB1 /* ic_list_rcar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,25 +42,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B14BB151A279724009F1C59 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		6B14BB171A27A3E5009F1C59 /* CarrosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrosTableViewController.swift; sourceTree = "<group>"; };
 		6B9F691A1A1003C00020C0D7 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		6B9F691E1A100A590020C0D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6BA0690119E99DD00064E802 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6BA9E5C219DC39A700214063 /* Mobile Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA9E5C619DC39A700214063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA9E5C719DC39A700214063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BA9E5C919DC39A700214063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BA9E5C919DC39A700214063 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6BA9E5CC19DC39A700214063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6BA9E5CE19DC39A700214063 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BA9E5D119DC39A700214063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6BA9E5D719DC39A700214063 /* Mobile TrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile TrackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA9E5DC19DC39A700214063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA9E5DD19DC39A700214063 /* Mobile_TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_TrackTests.swift; sourceTree = "<group>"; };
 		6BA9E5E719DC3D1300214063 /* track_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track_logo.png; sourceTree = "<group>"; };
+		6BB027471A290D360004E394 /* PontoMapa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PontoMapa.swift; sourceTree = "<group>"; };
 		6BC500071A18DC4700C4B9AB /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		6BC5000A1A18DE0300C4B9AB /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		6BC5000C1A18E36C00C4B9AB /* Veiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Veiculo.swift; sourceTree = "<group>"; };
 		6BC5000F1A18F81A00C4B9AB /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6BC500111A18FB4400C4B9AB /* Veiculos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Veiculos.swift; sourceTree = "<group>"; };
+		6BD4112B1A2CDA8D0017FB9B /* TrajetosFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrajetosFormViewController.swift; sourceTree = "<group>"; };
+		6BD82E761A26990500B0B444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_car.png; sourceTree = "<group>"; };
+		6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_gcar.png; sourceTree = "<group>"; };
+		6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_rcar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +115,15 @@
 				6BC500091A18DDEC00C4B9AB /* Entidades */,
 				6BA9E5E919DC3D1900214063 /* resources */,
 				6BA9E5C719DC39A700214063 /* AppDelegate.swift */,
-				6BA9E5C919DC39A700214063 /* ViewController.swift */,
+				6BA9E5C919DC39A700214063 /* LoginViewController.swift */,
 				6BA9E5CB19DC39A700214063 /* Main.storyboard */,
-				6BA9E5CE19DC39A700214063 /* Images.xcassets */,
 				6BA9E5D019DC39A700214063 /* LaunchScreen.xib */,
 				6BA9E5C519DC39A700214063 /* Supporting Files */,
 				6B9F691E1A100A590020C0D7 /* MainViewController.swift */,
+				6BD82E761A26990500B0B444 /* Images.xcassets */,
+				6B14BB151A279724009F1C59 /* SplitViewController.swift */,
+				6BD4112B1A2CDA8D0017FB9B /* TrajetosFormViewController.swift */,
+				6B14BB171A27A3E5009F1C59 /* CarrosTableViewController.swift */,
 			);
 			path = "Mobile Track";
 			sourceTree = "<group>";
@@ -139,6 +156,9 @@
 		6BA9E5E919DC3D1900214063 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */,
+				6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */,
+				6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */,
 				6BA9E5E719DC3D1300214063 /* track_logo.png */,
 			);
 			name = resources;
@@ -150,6 +170,7 @@
 				6BC500071A18DC4700C4B9AB /* Usuario.swift */,
 				6BC5000A1A18DE0300C4B9AB /* Evento.swift */,
 				6BC5000C1A18E36C00C4B9AB /* Veiculo.swift */,
+				6BB027471A290D360004E394 /* PontoMapa.swift */,
 			);
 			name = Entidades;
 			sourceTree = "<group>";
@@ -246,9 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA9E5CD19DC39A700214063 /* Main.storyboard in Resources */,
+				6BD82E771A26990500B0B444 /* Images.xcassets in Resources */,
+				6BDA7F951A2B6605002D2FB1 /* ic_list_gcar.png in Resources */,
+				6BDA7F941A2B6605002D2FB1 /* ic_list_car.png in Resources */,
 				6BA9E5D219DC39A700214063 /* LaunchScreen.xib in Resources */,
 				6BA9E5E819DC3D1300214063 /* track_logo.png in Resources */,
-				6BA9E5CF19DC39A700214063 /* Images.xcassets in Resources */,
+				6BDA7F961A2B6605002D2FB1 /* ic_list_rcar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +293,14 @@
 				6BC5000D1A18E36C00C4B9AB /* Veiculo.swift in Sources */,
 				6BC500121A18FB4400C4B9AB /* Veiculos.swift in Sources */,
 				6BC5000B1A18DE0300C4B9AB /* Evento.swift in Sources */,
-				6BA9E5CA19DC39A700214063 /* ViewController.swift in Sources */,
+				6BA9E5CA19DC39A700214063 /* LoginViewController.swift in Sources */,
+				6B14BB181A27A3E5009F1C59 /* CarrosTableViewController.swift in Sources */,
+				6BB027481A290D360004E394 /* PontoMapa.swift in Sources */,
 				6BA9E5C819DC39A700214063 /* AppDelegate.swift in Sources */,
+				6B14BB161A279724009F1C59 /* SplitViewController.swift in Sources */,
 				6B9F691B1A1003C00020C0D7 /* Webservice.swift in Sources */,
 				6BC500081A18DC4700C4B9AB /* Usuario.swift in Sources */,
+				6BD4112C1A2CDA8D0017FB9B /* TrajetosFormViewController.swift in Sources */,
 				6B9F691F1A100A590020C0D7 /* MainViewController.swift in Sources */,
 				6BC500101A18F81A00C4B9AB /* Login.swift in Sources */,
 			);
@@ -400,9 +428,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Mobile Track/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -411,9 +441,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Mobile Track/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
