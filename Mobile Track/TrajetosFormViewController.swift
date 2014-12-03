@@ -16,7 +16,7 @@ class TrajetosFormViewController: UIViewController {
     @IBOutlet weak var dtInicial: UIDatePicker!
     @IBOutlet weak var dtFinal: UIDatePicker!
     
-    @IBAction func btnOK(sender: UIButton) {
+    @IBAction func btnContinuar(sender: UIBarButtonItem) {
         if TopViewControler != nil
         {
             self.dismissViewControllerAnimated(true, completion: {
@@ -25,9 +25,11 @@ class TrajetosFormViewController: UIViewController {
         }
     }
     
-    @IBAction func btnCancelar(sender: UIButton) {
+    @IBAction func btnCanacelar(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -76,8 +76,8 @@ class CarrosTableViewController: UITableViewController {
 
         let carroAtual:Veiculo = listaSelecionado![indexPath.row]
         
-        cell.textLabel.text = carroAtual.Placa
-
+        cell.textLabel?.text = carroAtual.Placa
+        
         return cell
     }
     

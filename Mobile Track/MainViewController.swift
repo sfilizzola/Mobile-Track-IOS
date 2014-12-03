@@ -188,7 +188,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
     
     func DisparaFuncoes(){
         
-        var menuFuncoes: UIAlertController = UIAlertController(title: "Funções", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        var menuFuncoes: UIAlertController = UIAlertController(title: "Opções", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         var atualizarAction:UIAlertAction = UIAlertAction(title: "Atualizar", style: UIAlertActionStyle.Default, handler:
             {(alert:UIAlertAction!) in
