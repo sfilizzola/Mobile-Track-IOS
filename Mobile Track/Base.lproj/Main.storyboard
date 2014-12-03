@@ -33,16 +33,6 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OE0-eR-jkX">
                                 <rect key="frame" x="285" y="190" width="20" height="20"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-wZ-xdc">
-                                <rect key="frame" x="506" y="190" width="62" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="nfw-mz-PLS"/>
-                                </constraints>
-                                <state key="normal" title="Entrar"/>
-                                <connections>
-                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFZ-GL-bBC"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembrar usuário" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATB-wJ-73h">
                                 <rect key="frame" x="33" y="195" width="126" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,14 +43,34 @@
                                 <rect key="frame" x="167" y="190" width="51" height="31"/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
                             </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-0Q-gen">
+                                <rect key="frame" x="33" y="15" width="260" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5CH-0Q-gen" secondAttribute="height" multiplier="130:43" id="7kh-aF-PaG"/>
+                                    <constraint firstAttribute="width" constant="260" id="mUA-23-V2N"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-wZ-xdc">
+                                <rect key="frame" x="506" y="190" width="62" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="nfw-mz-PLS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Entrar"/>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFZ-GL-bBC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97254908084869385" green="0.98823535442352295" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="FQj-U6-9jf" secondAttribute="trailing" constant="16" id="2Fb-v0-3rM"/>
                             <constraint firstItem="FQj-U6-9jf" firstAttribute="centerX" secondItem="OE0-eR-jkX" secondAttribute="centerX" constant="5.5" id="4qq-dH-iaT"/>
+                            <constraint firstItem="5CH-0Q-gen" firstAttribute="leading" secondItem="PIG-lF-lbB" secondAttribute="leading" id="90y-zm-cvH"/>
                             <constraint firstItem="FQj-U6-9jf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="GN5-Lc-82a"/>
                             <constraint firstItem="FQj-U6-9jf" firstAttribute="top" secondItem="PIG-lF-lbB" secondAttribute="bottom" constant="8" id="GrM-DQ-ivX"/>
                             <constraint firstItem="PIG-lF-lbB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="Ia1-b8-WLP"/>
+                            <constraint firstItem="5CH-0Q-gen" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="JzS-Xc-81u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PIG-lF-lbB" secondAttribute="trailing" constant="16" id="KfI-xG-C4G"/>
                             <constraint firstItem="OE0-eR-jkX" firstAttribute="top" secondItem="FQj-U6-9jf" secondAttribute="bottom" constant="8" id="PlM-JB-nwW"/>
                             <constraint firstItem="2c7-jI-NkY" firstAttribute="leading" secondItem="ATB-wJ-73h" secondAttribute="trailing" constant="8" id="SgQ-Bl-pnz"/>
@@ -73,6 +83,7 @@
                             <constraint firstItem="ATB-wJ-73h" firstAttribute="top" secondItem="FQj-U6-9jf" secondAttribute="bottom" constant="13" id="qLf-hE-S3C"/>
                             <constraint firstItem="OE0-eR-jkX" firstAttribute="centerY" secondItem="Oei-wZ-xdc" secondAttribute="centerY" constant="-1" id="vgB-4o-STn"/>
                             <constraint firstItem="PIG-lF-lbB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="wht-xV-mAO"/>
+                            <constraint firstItem="PIG-lF-lbB" firstAttribute="top" secondItem="5CH-0Q-gen" secondAttribute="bottom" constant="13" id="y0X-7i-4fg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -333,7 +344,10 @@
             <point key="canvasLocation" x="1346" y="36"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="track_logo.png" width="2598" height="454"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="83f-eY-MgR"/>
+        <segue reference="r4A-p3-5dS"/>
     </inferredMetricsTieBreakers>
 </document>
