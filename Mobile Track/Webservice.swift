@@ -176,11 +176,13 @@ class Webservice {
         
         var request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
-        
+              
         var response:NSURLResponse?
         var responseError:NSError?
+       
+        var teste:String
         
-         var listaEventos : [Evento] = [Evento]()
+        var listaEventos : [Evento] = [Evento]()
         
         var urlData: NSData? = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &responseError)
         
