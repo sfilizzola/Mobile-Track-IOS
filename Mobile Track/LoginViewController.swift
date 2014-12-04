@@ -18,6 +18,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate,  UITextViewDel
     
     @IBOutlet weak var lembrarSlider: UISwitch!
     
+    @IBAction func lembrarChangeEvent(sender: UISwitch) {
+        
+        let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setBool(sender.on, forKey: "lembrarChecked")
+        
+    }
     var usuarioLogado:Usuario?
     
     var StringErro:String?
@@ -36,12 +42,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate,  UITextViewDel
         
         var UserName: String? = userDefaults.valueForKey("UserName") as String?
         var UserPassword: String? = userDefaults.valueForKey("UserPassword") as String?
+        var lembrar:Bool? = userDefaults.valueForKey("lembrarChecked") as Bool?
         
-        if UserName != nil
+        if lembrar != nil
         {
-            self.txtUsuario.text = UserName
-            self.txtSenha.text = UserPassword
-            self.lembrarSlider.setOn(true, animated: true)
+            if lembrar! && UserName != nil
+            {
+                self.txtUsuario.text = UserName
+                self.txtSenha.text = UserPassword
+                self.lembrarSlider.setOn(true, animated: true)
+            }
         }
     }
 

@@ -42,6 +42,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2c7-jI-NkY">
                                 <rect key="frame" x="167" y="190" width="51" height="31"/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
+                                <connections>
+                                    <action selector="lembrarChangeEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="haq-73-r2A"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-wZ-xdc">
                                 <rect key="frame" x="506" y="190" width="62" height="22"/>
