@@ -43,13 +43,6 @@
                                 <rect key="frame" x="167" y="190" width="51" height="31"/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-0Q-gen">
-                                <rect key="frame" x="33" y="15" width="260" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="5CH-0Q-gen" secondAttribute="height" multiplier="130:43" id="7kh-aF-PaG"/>
-                                    <constraint firstAttribute="width" constant="260" id="mUA-23-V2N"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-wZ-xdc">
                                 <rect key="frame" x="506" y="190" width="62" height="22"/>
                                 <constraints>
@@ -61,6 +54,13 @@
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFZ-GL-bBC"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-0Q-gen">
+                                <rect key="frame" x="33" y="15" width="260" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5CH-0Q-gen" secondAttribute="height" multiplier="130:43" id="7kh-aF-PaG"/>
+                                    <constraint firstAttribute="width" constant="260" id="mUA-23-V2N"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254908084869385" green="0.98823535442352295" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -74,7 +74,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="PIG-lF-lbB" secondAttribute="trailing" constant="16" id="KfI-xG-C4G"/>
                             <constraint firstItem="OE0-eR-jkX" firstAttribute="top" secondItem="FQj-U6-9jf" secondAttribute="bottom" constant="8" id="PlM-JB-nwW"/>
                             <constraint firstItem="2c7-jI-NkY" firstAttribute="leading" secondItem="ATB-wJ-73h" secondAttribute="trailing" constant="8" id="SgQ-Bl-pnz"/>
-                            <constraint firstAttribute="centerX" secondItem="5CH-0Q-gen" secondAttribute="centerX" constant="137" id="Udn-bX-Vg5"/>
                             <constraint firstAttribute="centerX" secondItem="PIG-lF-lbB" secondAttribute="centerX" constant="-0.5" id="Wi6-DM-NXS"/>
                             <constraint firstItem="ATB-wJ-73h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="ZKd-Jg-pwG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Oei-wZ-xdc" secondAttribute="trailing" constant="16" id="ade-HD-3SC"/>

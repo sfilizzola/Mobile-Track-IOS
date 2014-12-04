@@ -83,14 +83,20 @@ class Webservice {
             let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
             let jsonData: NSDictionary = jsonResponse.valueForKey("UltimaLocalizacaoVeiculoJSONResult") as NSDictionary
             
+            var dateFormatter:NSDateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+            
             if jsonData.count != 0
             {
                 evento = Evento()
+                
+                var DataEvento: String = jsonData.valueForKey("DataEvento") as String
+                
                 evento?.CodCliente = jsonData.valueForKey("CodCliente") as Int
                 evento?.CodEquipamento = jsonData.valueForKey("CodEquipamento") as Int
                 evento?.CodEvento = jsonData.valueForKey("CodEvento") as Int
                 evento?.CodVeiculo = jsonData.valueForKey("CodVeiculo") as Int
-               // evento?.dataEvento = (jsonData.valueForKey("DataEvento") as NSDate)
+                evento?.dataEvento = dateFormatter.dateFromString(DataEvento)
                 evento?.Hodometro = jsonData.valueForKey("Hodometro") as Int
                 evento?.Latitude = jsonData.valueForKey("Latitude") as Double
                 evento?.Longitude = jsonData.valueForKey("Longitude") as Double
@@ -192,12 +198,16 @@ class Webservice {
             let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
             let jsonData: NSArray = jsonResponse.valueForKey("ListaPontosPeriodoJSONResult") as NSArray
             
+            var dateFormatter:NSDateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+            
             for item in jsonData
             {
                 var evt:Evento = Evento()
                 evt.Hodometro = item.valueForKey("Hodometro") as Int
                 evt.Latitude = item.valueForKey("Latitude") as Double
                 evt.Longitude = item.valueForKey("Longitude") as Double
+                evt.dataEvento = dateFormatter.dateFromString(item.valueForKey("DataEvento") as String)
                 
                 listaEventos.append(evt);
             }
@@ -207,22 +217,7 @@ class Webservice {
         return listaEventos
     }
 
-    
-    /*func parser(parser: NSXMLParser!, didStartElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!, attributes attributeDict: NSDictionary!) {
-        NSLog("Element's name is \(elementName)")
-        NSLog("Element's attributes are \(attributeDict)")
-    }
-    
-    func parser(parser: NSXMLParser!, foundCharacters string: String!)
-    {
-        NSLog("foundCharacters \(string)")
-    }*/
-    
-    
-    
-    
-    
-    
+
     
     
 }

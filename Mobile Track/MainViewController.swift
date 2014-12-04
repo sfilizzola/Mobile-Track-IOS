@@ -117,8 +117,10 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         {
             let center = CLLocationCoordinate2DMake(ultimoEventoVeiculo!.Latitude, ultimoEventoVeiculo!.Longitude)
             
-            //TODO - legenda em hora  
-            let pontoMapa: PontoMapa = PontoMapa(newCoordinate: center, newTitle: veiculoSelecionado!.Placa!, newSubTitle: "")
+            var dateFormatter:NSDateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd/MM/YYYY HH:mm"
+            
+            let pontoMapa: PontoMapa = PontoMapa(newCoordinate: center, newTitle: veiculoSelecionado!.Placa!, newSubTitle: dateFormatter.stringFromDate(ultimoEventoVeiculo!.dataEvento!))
  
             var imageCarro:UIImage
             if ultimoEventoVeiculo!.StatusIgnicao!
@@ -128,8 +130,11 @@ class MainViewController: UIViewController, MKMapViewDelegate {
                 pontoMapa.image = UIImage(named: "ic_list_rcar.png")
             }
             
-            self.map.addAnnotation(pontoMapa)
-            
+            dispatch_async(dispatch_get_main_queue(),
+            {
+                self.map.addAnnotation(pontoMapa)
+            });
+
             let span = MKCoordinateSpanMake(0.005, 0.005)
             let region = MKCoordinateRegionMake(center, span)
             self.map.setRegion(region, animated: true)
@@ -157,9 +162,15 @@ class MainViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         
-        /*if !(annotation is PontoMapa) {
+        if !(annotation is PontoMapa) {
             return nil
-        }*/
+        }
+        let cpa = annotation as PontoMapa
+        
+        if !cpa.isCarro {
+            return nil
+        }
+        
     
         var PinId:String = "AnnotationId"
         
@@ -178,7 +189,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         //Set annotation-specific properties **AFTER**
         //the view is dequeued or created...
     
-        let cpa = annotation as PontoMapa
+        
         if (cpa.image != nil)
         {
             anView.image = cpa.image
@@ -263,7 +274,6 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         var listaEvento:[Evento] = veicDAL.Trajetos(dtIni, DataFinal: dtFim, CodVeiculo: veiculoSelecionado!.CodVeiculo!)
         //plota no mapa
         
-        var coordenadas:UnsafeMutablePointer<CLLocationCoordinate2D> = UnsafeMutablePointer<CLLocationCoordinate2D>()
         var count:Int = 0
         
         var coords: [CLLocationCoordinate2D] = []
@@ -272,7 +282,19 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         
         for evt:Evento in listaEvento
         {
-            //coordenadas.put(CLLocationCoordinate2D(latitude: evt.Latitude, longitude: evt.Longitude))
+            let center = CLLocationCoordinate2DMake(evt.Latitude, evt.Longitude)
+            
+            var dateFormatter:NSDateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd/MM/YYYY HH:mm"
+            
+            let pontoMapa: PontoMapa = PontoMapa(newCoordinate: center, newTitle: "Posição: \(count+1)", newSubTitle: dateFormatter.stringFromDate(evt.dataEvento!))
+            pontoMapa.isCarro = false
+            dispatch_async(dispatch_get_main_queue(),
+            {
+                self.map.addAnnotation(pontoMapa)
+            })
+            
+            
             coords.append(CLLocationCoordinate2D(latitude: evt.Latitude, longitude: evt.Longitude))
             count++
         }
@@ -280,9 +302,10 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         //var polyline:MKPolyline = MKPolyline(coordinates: coordenadas, count: count)
         
         var poly: MKPolyline = MKPolyline(coordinates: &coords, count: count)
-        
-        self.map.addOverlay(poly)
-        
+        dispatch_async(dispatch_get_main_queue(),
+        {
+            self.map.addOverlay(poly)
+        })
         self.polyLineGeral = poly
         
         self.activityIndicator.stopAnimating()

@@ -16,6 +16,7 @@ class PontoMapa: NSObject, MKAnnotation {
     var title: String!
     var subtitle: String!
     var image:UIImage?
+    var isCarro:Bool = true
     
     init(newCoordinate: CLLocationCoordinate2D, newTitle: String, newSubTitle: String) {
         self.coordinate = newCoordinate
