@@ -8,10 +8,13 @@
 
 import UIKit
 
-class CarrosTableViewController: UITableViewController {
+class CarrosTableViewController: UITableViewController, UISearchBarDelegate {
     
     var listaSelecionado:[Veiculo]?
     var usuarioLogado:Usuario?
+    var detailVC:MainViewController?
+    
+    @IBOutlet weak var busca: UISearchBar!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -19,18 +22,26 @@ class CarrosTableViewController: UITableViewController {
         //se for iPad
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad
         {
-            //var funcBarButton:UIBarButtonItem = UIBarButtonItem(title: "Funçoes", style: UIBarButtonItemStyle.Plain, target: , action: "DisparaFuncoes")
-            //self.navigationItem.rightBarButtonItem = funcBarButton;
+            if detailVC != nil
+            {
+                var funcBarButton:UIBarButtonItem = UIBarButtonItem(title: "Opções", style: UIBarButtonItemStyle.Plain, target: detailVC!, action: "DisparaFuncoes")
+                self.navigationItem.rightBarButtonItem = funcBarButton;
+            }
         }
         
+        if (listaSelecionado == nil)
+        {
+            NSThread.detachNewThreadSelector("ListaVeiculos", toTarget: self, withObject: nil)
+        }
+    }
+    
+    func ListaVeiculos ()
+    {
         var userPrefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
         var CodUsuarioLogado:Int = userPrefs.integerForKey("CodUsuarioLogado")
-        
-        if (listaSelecionado == nil) {
-            var DALVeiculos:Veiculos = Veiculos()
-            listaSelecionado = DALVeiculos.VeiculosPorUsuario(CodUsuarioLogado)
-        }
+
+        var DALVeiculos:Veiculos = Veiculos()
+        listaSelecionado = DALVeiculos.VeiculosPorUsuario(CodUsuarioLogado)
     }
     
     override func viewDidLoad() {
@@ -81,6 +92,21 @@ class CarrosTableViewController: UITableViewController {
         return cell
     }
     
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        //TODO - filtra lista
+        /*listaSelecionado = listaSelecionado!.filter({
+            v in v.Placa!.        })*/
+        
+        NSLog(searchText)
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) // called when keyboard search button pressed
+    {
+        searchBar.resignFirstResponder()
+    }
+    
+    
     
     /*
     // Override to support conditional editing of the table view.
@@ -127,6 +153,7 @@ class CarrosTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow()
             {
+                busca.resignFirstResponder()
                 let carroSelecionado:Veiculo = listaSelecionado![indexPath.row] as Veiculo
                 let controler:MainViewController = segue.destinationViewController as MainViewController
                 

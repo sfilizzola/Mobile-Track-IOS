@@ -96,7 +96,6 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         
         
         if veiculoSelecionado != nil {
-            NSLog("Veiculo: \(veiculoSelecionado!.Placa)")
             self.navigationItem.title = veiculoSelecionado!.Placa
             self.activityIndicator.startAnimating()
             NSThread.detachNewThreadSelector("PlotaVeiculo", toTarget: self, withObject: nil)
