@@ -42,6 +42,9 @@ class CarrosTableViewController: UITableViewController, UISearchBarDelegate {
 
         var DALVeiculos:Veiculos = Veiculos()
         listaSelecionado = DALVeiculos.VeiculosPorUsuario(CodUsuarioLogado)
+        
+        //Agora precisa disso
+        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {

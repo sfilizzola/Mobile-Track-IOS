@@ -18,14 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Helpshift.installForApiKey("a21a303c81649ab4857be952523837ff", domainName: "ecxtrack.helpshift.com", appID: "ecxtrack_platform_20150406213738198-1af3f4bfd4f7581")
+        //Helpshift.installForApiKey("a21a303c81649ab4857be952523837ff", domainName: "ecxtrack.helpshift.com", appID: "ecxtrack_platform_20150406213738198-1af3f4bfd4f7581")
         
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.backgroundColor = UIColor.whiteColor()
-        self.window?.rootViewController = UIViewController()
-        self.window?.makeKeyAndVisible()
+        //self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        //self.window?.backgroundColor = UIColor.whiteColor()
+        //self.window?.rootViewController = UIViewController()
+        //self.window?.makeKeyAndVisible()
         
-        Helpshift.sharedInstance().showConversation(self.window?.rootViewController, withOptions: nil)
+        //Helpshift.sharedInstance().showConversation(self.window?.rootViewController, withOptions: nil)
 
         
         return true

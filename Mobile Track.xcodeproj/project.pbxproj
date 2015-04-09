@@ -72,6 +72,7 @@
 		EAE0607D1AD4BDE4005A6015 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE0607C1AD4BDE4005A6015 /* QuickLook.framework */; };
 		EAE0607F1AD4BDEB005A6015 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE0607E1AD4BDEB005A6015 /* MessageUI.framework */; };
 		EAE060841AD4BF57005A6015 /* HelpshiftLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAE060821AD4BF57005A6015 /* HelpshiftLocalizable.strings */; };
+		FBEC7D531AD7291B00DDC74F /* AjudaTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 		EAE0607E1AD4BDEB005A6015 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EAE060801AD4BE08005A6015 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		EAE060831AD4BF57005A6015 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjudaTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		6BA9E5C419DC39A700214063 /* Mobile Track */ = {
 			isa = PBXGroup;
 			children = (
+				FBEC7D511AD7290400DDC74F /* Ajuda */,
 				6BC5000E1A18E47100C4B9AB /* Data Access */,
 				6BC500091A18DDEC00C4B9AB /* Entidades */,
 				6BA9E5E919DC3D1900214063 /* resources */,
@@ -344,6 +347,14 @@
 				EAE060821AD4BF57005A6015 /* HelpshiftLocalizable.strings */,
 			);
 			path = pt.lproj;
+			sourceTree = "<group>";
+		};
+		FBEC7D511AD7290400DDC74F /* Ajuda */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */,
+			);
+			name = Ajuda;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +497,7 @@
 				6BC5000D1A18E36C00C4B9AB /* Veiculo.swift in Sources */,
 				6BC500121A18FB4400C4B9AB /* Veiculos.swift in Sources */,
 				6BC5000B1A18DE0300C4B9AB /* Evento.swift in Sources */,
+				FBEC7D531AD7291B00DDC74F /* AjudaTableVC.swift in Sources */,
 				6BA9E5CA19DC39A700214063 /* LoginViewController.swift in Sources */,
 				6B14BB181A27A3E5009F1C59 /* CarrosTableViewController.swift in Sources */,
 				6BB027481A290D360004E394 /* PontoMapa.swift in Sources */,
@@ -638,7 +650,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Helpshift.h";
 			};
 			name = Debug;
 		};
@@ -656,7 +668,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Helpshift.h";
 			};
 			name = Release;
 		};

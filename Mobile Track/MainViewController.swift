@@ -249,10 +249,16 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         var cancelar:UIAlertAction = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler:
             nil)
         
+        var AddAjuda:UIAlertAction = UIAlertAction(title: "Ajuda", style: UIAlertActionStyle.Default, handler:
+            {(alert:UIAlertAction!) in
+                self.performSegueWithIdentifier("segueToAjuda", sender: self)
+        })
+        
         
         menuFuncoes.addAction(atualizarAction)
         menuFuncoes.addAction(rotaAction)
         menuFuncoes.addAction(trajetosAction)
+        menuFuncoes.addAction(AddAjuda)
         menuFuncoes.addAction(sair)
         menuFuncoes.addAction(cancelar)
         
