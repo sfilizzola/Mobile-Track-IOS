@@ -164,7 +164,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         if !(annotation is PontoMapa) {
             return nil
         }
-        let cpa = annotation as PontoMapa
+        let cpa = annotation as! PontoMapa
         
         if !cpa.isCarro {
             return nil
@@ -221,7 +221,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         
         var trajetosAction:UIAlertAction = UIAlertAction(title: "Trajetos", style: UIAlertActionStyle.Default, handler:
             {(alert:UIAlertAction!) in
-                var tfvc = self.storyboard?.instantiateViewControllerWithIdentifier("Trajetos") as TrajetosFormViewController
+                var tfvc = self.storyboard?.instantiateViewControllerWithIdentifier("Trajetos") as! TrajetosFormViewController
                 tfvc.TopViewControler = self
                 self.presentViewController(tfvc, animated: true, completion: nil)
         })

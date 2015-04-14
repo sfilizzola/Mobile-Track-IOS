@@ -40,9 +40,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate,  UITextViewDel
     override func viewWillAppear(animated: Bool) {
         let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         
-        var UserName: String? = userDefaults.valueForKey("UserName") as String?
-        var UserPassword: String? = userDefaults.valueForKey("UserPassword") as String?
-        var lembrar:Bool? = userDefaults.valueForKey("lembrarChecked") as Bool?
+        var UserName: String? = userDefaults.valueForKey("UserName") as! String?
+        var UserPassword: String? = userDefaults.valueForKey("UserPassword") as! String?
+        var lembrar:Bool? = userDefaults.valueForKey("lembrarChecked") as! Bool?
         
         if lembrar != nil
         {
@@ -148,7 +148,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate,  UITextViewDel
     
     func carregaview(){
         //chama na mao
-        var mvc = self.storyboard?.instantiateViewControllerWithIdentifier("SplitViewController") as SplitViewController
+        var mvc = self.storyboard?.instantiateViewControllerWithIdentifier("SplitViewController") as! SplitViewController
         mvc.usuarioLogado = self.usuarioLogado
     
         self.presentViewController(mvc, animated: true, completion: nil)

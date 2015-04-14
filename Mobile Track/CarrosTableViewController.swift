@@ -86,7 +86,7 @@ class CarrosTableViewController: UITableViewController, UISearchBarDelegate {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CelulaCarro", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("CelulaCarro", forIndexPath: indexPath) as! UITableViewCell
 
         let carroAtual:Veiculo = listaSelecionado![indexPath.row]
         
@@ -158,11 +158,11 @@ class CarrosTableViewController: UITableViewController, UISearchBarDelegate {
             {
                 busca.resignFirstResponder()
                 let carroSelecionado:Veiculo = listaSelecionado![indexPath.row] as Veiculo
-                let controler:MainViewController = segue.destinationViewController as MainViewController
+                let controler:MainViewController = segue.destinationViewController as! MainViewController
                 
                 controler.veiculoSelecionado = carroSelecionado
-                /*let object = objects[indexPath.row] as NSDate
-                let controller = (segue.destinationViewController as MainViewController).topViewController as MainViewController
+                /*let object = objects[indexPath.row] as! NSDate
+                let controller = (segue.destinationViewController as! MainViewController).topViewController as! MainViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true*/

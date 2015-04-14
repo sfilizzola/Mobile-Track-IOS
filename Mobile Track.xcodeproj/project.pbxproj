@@ -86,15 +86,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B14BB151A279724009F1C59 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
-		6B14BB171A27A3E5009F1C59 /* CarrosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrosTableViewController.swift; sourceTree = "<group>"; };
-		6B9F691A1A1003C00020C0D7 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
-		6B9F691E1A100A590020C0D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6B14BB151A279724009F1C59 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SplitViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6B14BB171A27A3E5009F1C59 /* CarrosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CarrosTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6B9F691A1A1003C00020C0D7 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Webservice.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6B9F691E1A100A590020C0D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6BA0690119E99DD00064E802 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6BA9E5C219DC39A700214063 /* Mobile Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA9E5C619DC39A700214063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BA9E5C719DC39A700214063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BA9E5C919DC39A700214063 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6BA9E5C719DC39A700214063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6BA9E5C919DC39A700214063 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LoginViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6BA9E5CC19DC39A700214063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BA9E5D119DC39A700214063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6BA9E5D719DC39A700214063 /* Mobile TrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile TrackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +112,7 @@
 		6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_car.png; sourceTree = "<group>"; };
 		6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_gcar.png; sourceTree = "<group>"; };
 		6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_rcar.png; sourceTree = "<group>"; };
-		EAE0602A1AD4BD5D005A6015 /* Helpshift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpshift.h; sourceTree = "<group>"; };
+		EAE0602A1AD4BD5D005A6015 /* Helpshift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Helpshift.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EAE0602C1AD4BD5D005A6015 /* HS-Attachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HS-Attachment.png"; sourceTree = "<group>"; };
 		EAE0602D1AD4BD5D005A6015 /* HS-Attachment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HS-Attachment@2x.png"; sourceTree = "<group>"; };
 		EAE0602E1AD4BD5D005A6015 /* HS-Attachment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HS-Attachment@3x.png"; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 		EAE0607C1AD4BDE4005A6015 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		EAE0607E1AD4BDEB005A6015 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EAE060801AD4BE08005A6015 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		EAE060831AD4BF57005A6015 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = HelpshiftLocalizable.strings; sourceTree = "<group>"; };
-		FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjudaTableVC.swift; sourceTree = "<group>"; };
+		EAE060831AD4BF57005A6015 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = pt; path = HelpshiftLocalizable.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AjudaTableVC.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,7 +650,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Helpshift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
 			};
 			name = Debug;
 		};
@@ -668,7 +668,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Helpshift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
 			};
 			name = Release;
 		};

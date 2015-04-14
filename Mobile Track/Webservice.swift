@@ -38,19 +38,19 @@ class Webservice {
         if (urlData != nil){
             var error:NSError?
         
-            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
-            let jsonData: NSDictionary = jsonResponse.valueForKey("LoginJSONResult") as NSDictionary
+            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as! NSDictionary
+            let jsonData: NSDictionary = jsonResponse.valueForKey("LoginJSONResult") as! NSDictionary
 
-            var Status:NSString = jsonData.valueForKey("Status") as NSString
+            var Status:String = jsonData.valueForKey("Status") as! String
         
         
         
             if Status == "OK"
             {
                 usu = Usuario()
-                usu?.Nome = (jsonData.valueForKey("Nome") as NSString)
-                usu?.Email = (jsonData.valueForKey("Email") as NSString)
-                usu?.CodUsuario = jsonData.valueForKey("CodUsuario") as NSInteger
+                usu?.Nome = (jsonData.valueForKey("Nome") as! String)
+                usu?.Email = (jsonData.valueForKey("Email") as! String)
+                usu?.CodUsuario = jsonData.valueForKey("CodUsuario") as! NSInteger
                 usu?.Status = Status
             }
         }
@@ -80,8 +80,8 @@ class Webservice {
         if (urlData != nil){
             var error:NSError?
             
-            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
-            let jsonData: NSDictionary = jsonResponse.valueForKey("UltimaLocalizacaoVeiculoJSONResult") as NSDictionary
+            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as! NSDictionary
+            let jsonData: NSDictionary = jsonResponse.valueForKey("UltimaLocalizacaoVeiculoJSONResult") as! NSDictionary
             
             var dateFormatter:NSDateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
@@ -90,17 +90,17 @@ class Webservice {
             {
                 evento = Evento()
                 
-                var DataEvento: String = jsonData.valueForKey("DataEvento") as String
+                var DataEvento: String = jsonData.valueForKey("DataEvento") as! String
                 
-                evento?.CodCliente = jsonData.valueForKey("CodCliente") as Int
-                evento?.CodEquipamento = jsonData.valueForKey("CodEquipamento") as Int
-                evento?.CodEvento = jsonData.valueForKey("CodEvento") as Int
-                evento?.CodVeiculo = jsonData.valueForKey("CodVeiculo") as Int
+                evento?.CodCliente = jsonData.valueForKey("CodCliente") as! Int
+                evento?.CodEquipamento = jsonData.valueForKey("CodEquipamento") as! Int
+                evento?.CodEvento = jsonData.valueForKey("CodEvento") as! Int
+                evento?.CodVeiculo = jsonData.valueForKey("CodVeiculo") as! Int
                 evento?.dataEvento = dateFormatter.dateFromString(DataEvento)
-                evento?.Hodometro = jsonData.valueForKey("Hodometro") as Int
-                evento?.Latitude = jsonData.valueForKey("Latitude") as Double
-                evento?.Longitude = jsonData.valueForKey("Longitude") as Double
-                evento?.StatusIgnicao = (jsonData.valueForKey("StatusIgnicao") as Bool)
+                evento?.Hodometro = jsonData.valueForKey("Hodometro") as! Int
+                evento?.Latitude = jsonData.valueForKey("Latitude") as! Double
+                evento?.Longitude = jsonData.valueForKey("Longitude") as! Double
+                evento?.StatusIgnicao = (jsonData.valueForKey("StatusIgnicao") as! Bool)
  
             }
             
@@ -144,14 +144,14 @@ class Webservice {
         if (urlData != nil){
             var error:NSError?
             
-            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
-            let jsonData: NSArray = jsonResponse.valueForKey("VeiculosPorClienteJSONResult") as NSArray
+            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as! NSDictionary
+            let jsonData: NSArray = jsonResponse.valueForKey("VeiculosPorClienteJSONResult") as! NSArray
             
             for item in jsonData
             {
                 var carro:Veiculo = Veiculo()
-                carro.Placa =  (item.valueForKey("Placa") as String)
-                carro.CodVeiculo = (item.valueForKey("CodVeiculo") as Int)
+                carro.Placa =  (item.valueForKey("Placa") as! String)
+                carro.CodVeiculo = (item.valueForKey("CodVeiculo") as! Int)
                 listaVeiculos.append(carro);
             }
             
@@ -195,8 +195,8 @@ class Webservice {
         if (urlData != nil){
             var error:NSError?
             
-            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
-            let jsonData: NSArray = jsonResponse.valueForKey("ListaPontosPeriodoJSONResult") as NSArray
+            let jsonResponse:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as! NSDictionary
+            let jsonData: NSArray = jsonResponse.valueForKey("ListaPontosPeriodoJSONResult") as! NSArray
             
             var dateFormatter:NSDateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
@@ -204,10 +204,10 @@ class Webservice {
             for item in jsonData
             {
                 var evt:Evento = Evento()
-                evt.Hodometro = item.valueForKey("Hodometro") as Int
-                evt.Latitude = item.valueForKey("Latitude") as Double
-                evt.Longitude = item.valueForKey("Longitude") as Double
-                evt.dataEvento = dateFormatter.dateFromString(item.valueForKey("DataEvento") as String)
+                evt.Hodometro = item.valueForKey("Hodometro") as! Int
+                evt.Latitude = item.valueForKey("Latitude") as! Double
+                evt.Longitude = item.valueForKey("Longitude") as! Double
+                evt.dataEvento = dateFormatter.dateFromString(item.valueForKey("DataEvento") as! String)
                 
                 listaEventos.append(evt);
             }

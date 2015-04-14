@@ -37,14 +37,14 @@ class SplitViewController: UISplitViewController {
         var DetailVC:MainViewController?
         
         if segue.destinationViewController.isKindOfClass(MainViewController) {
-            var destViewController:MainViewController = segue.destinationViewController as MainViewController
+            var destViewController:MainViewController = segue.destinationViewController as! MainViewController
             destViewController.usuarioLogado = self.usuarioLogado
             DetailVC = destViewController
         }
         
         if segue.destinationViewController.isKindOfClass(CarrosTableViewController)
         {
-            var destViewController:CarrosTableViewController = segue.destinationViewController as CarrosTableViewController
+            var destViewController:CarrosTableViewController = segue.destinationViewController as! CarrosTableViewController
             destViewController.usuarioLogado = self.usuarioLogado
             if DetailVC != nil
             {
