@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class AjudaTableVC: UITableViewController {
+class AjudaTableVC: UITableViewController, MFMailComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,62 @@ class AjudaTableVC: UITableViewController {
 
     // MARK: - Table view data source
 
+    @IBAction func telPressed(sender: UIButton) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel://3130296444")!)
+        
+    }
+    
+    
+    @IBAction func mailPressed(sender: UIButton) {
+        
+        if (MFMailComposeViewController.canSendMail()){
+            var mailCompose: MFMailComposeViewController = MFMailComposeViewController()
+            
+            mailCompose.mailComposeDelegate = self
+            
+            mailCompose.setSubject("Sua dúvida...")
+            mailCompose.setMessageBody("", isHTML: false)
+            mailCompose.setToRecipients(["ecxtrack@ecx.com.br"])
+            
+            self.presentViewController(mailCompose, animated: true, completion: nil)
+        }
+        else{
+            
+            let alertSucesso = UIAlertView()
+            alertSucesso.message = "Conta de email não configurada no dispositivo."
+            alertSucesso.addButtonWithTitle("Ok")
+            alertSucesso.delegate = self
+            alertSucesso.show()
+        }
+        
+    }
+    
+    func mailComposeController(controller:MFMailComposeViewController, didFinishWithResult result:MFMailComposeResult, error:NSError) {
+        switch result.value {
+        case MFMailComposeResultCancelled.value:
+            println("Mail cancelled")
+        case MFMailComposeResultSaved.value:
+            println("Mail saved")
+        case MFMailComposeResultSent.value:
+            println("Mail sent")
+        case MFMailComposeResultFailed.value:
+            println("Mail sent failure: %@", [error.localizedDescription])
+        default:
+            break
+        }
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    
+    
+    @IBAction func chatPressed(sender: UIButton) {
+        
+        Helpshift.installForApiKey("a21a303c81649ab4857be952523837ff", domainName: "ecxtrack.helpshift.com", appID: "ecxtrack_platform_20150406213738198-1af3f4bfd4f7581")
+        
+        Helpshift.sharedInstance().showConversation(self, withOptions: nil)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -36,7 +93,7 @@ class AjudaTableVC: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 3
+        return 4
     }
 
     /*

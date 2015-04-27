@@ -29,6 +29,10 @@
 		6BDA7F941A2B6605002D2FB1 /* ic_list_car.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */; };
 		6BDA7F951A2B6605002D2FB1 /* ic_list_gcar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */; };
 		6BDA7F961A2B6605002D2FB1 /* ic_list_rcar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */; };
+		EA23B86A1AEF016B006D792C /* comousar-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EA23B8691AEF016B006D792C /* comousar-64.png */; };
+		EA6D955E1ADDCE0F00A0927E /* Tel-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D955D1ADDCE0F00A0927E /* Tel-64.png */; };
+		EA6D95601ADDCEC900A0927E /* Email-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D955F1ADDCEC900A0927E /* Email-64.png */; };
+		EA6D95621ADDCF5600A0927E /* chat-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D95611ADDCF5600A0927E /* chat-64.png */; };
 		EAE0604B1AD4BD5D005A6015 /* HS-Attachment.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE0602C1AD4BD5D005A6015 /* HS-Attachment.png */; };
 		EAE0604C1AD4BD5D005A6015 /* HS-Attachment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE0602D1AD4BD5D005A6015 /* HS-Attachment@2x.png */; };
 		EAE0604D1AD4BD5D005A6015 /* HS-Attachment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE0602E1AD4BD5D005A6015 /* HS-Attachment@3x.png */; };
@@ -112,6 +116,10 @@
 		6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_car.png; sourceTree = "<group>"; };
 		6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_gcar.png; sourceTree = "<group>"; };
 		6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_rcar.png; sourceTree = "<group>"; };
+		EA23B8691AEF016B006D792C /* comousar-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comousar-64.png"; sourceTree = "<group>"; };
+		EA6D955D1ADDCE0F00A0927E /* Tel-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tel-64.png"; sourceTree = "<group>"; };
+		EA6D955F1ADDCEC900A0927E /* Email-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Email-64.png"; sourceTree = "<group>"; };
+		EA6D95611ADDCF5600A0927E /* chat-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-64.png"; sourceTree = "<group>"; };
 		EAE0602A1AD4BD5D005A6015 /* Helpshift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Helpshift.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EAE0602C1AD4BD5D005A6015 /* HS-Attachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HS-Attachment.png"; sourceTree = "<group>"; };
 		EAE0602D1AD4BD5D005A6015 /* HS-Attachment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HS-Attachment@2x.png"; sourceTree = "<group>"; };
@@ -274,6 +282,10 @@
 		6BA9E5E919DC3D1900214063 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA23B8691AEF016B006D792C /* comousar-64.png */,
+				EA6D95611ADDCF5600A0927E /* chat-64.png */,
+				EA6D955F1ADDCEC900A0927E /* Email-64.png */,
+				EA6D955D1ADDCE0F00A0927E /* Tel-64.png */,
 				6BDA7F911A2B6605002D2FB1 /* ic_list_car.png */,
 				6BDA7F921A2B6605002D2FB1 /* ic_list_gcar.png */,
 				6BDA7F931A2B6605002D2FB1 /* ic_list_rcar.png */,
@@ -461,10 +473,12 @@
 				EAE060681AD4BD5D005A6015 /* HSTutorialiPad@3x.png in Resources */,
 				EAE0605A1AD4BD5D005A6015 /* HS-screenshot-error@2x.png in Resources */,
 				EAE060521AD4BD5D005A6015 /* HS-delete-button@2x.png in Resources */,
+				EA6D95621ADDCF5600A0927E /* chat-64.png in Resources */,
 				EAE060531AD4BD5D005A6015 /* HS-delete-button@3x.png in Resources */,
 				EAE0605B1AD4BD5D005A6015 /* HSChatBubbleBlue.png in Resources */,
 				EAE0605F1AD4BD5D005A6015 /* HSChatBubbleWhite@2x.png in Resources */,
 				EAE060561AD4BD5D005A6015 /* HS-powered-by-logo.png in Resources */,
+				EA6D955E1ADDCE0F00A0927E /* Tel-64.png in Resources */,
 				EAE0604E1AD4BD5D005A6015 /* HS-camera-button.png in Resources */,
 				EAE0604B1AD4BD5D005A6015 /* HS-Attachment.png in Resources */,
 				EAE0605C1AD4BD5D005A6015 /* HSChatBubbleBlue@2x.png in Resources */,
@@ -475,7 +489,9 @@
 				6BA9E5E819DC3D1300214063 /* track_logo.png in Resources */,
 				EAE060651AD4BD5D005A6015 /* HSTutorial@3x.png in Resources */,
 				EAE0604F1AD4BD5D005A6015 /* HS-camera-button@2x.png in Resources */,
+				EA23B86A1AEF016B006D792C /* comousar-64.png in Resources */,
 				EAE060641AD4BD5D005A6015 /* HSTutorial@2x.png in Resources */,
+				EA6D95601ADDCEC900A0927E /* Email-64.png in Resources */,
 				6BDA7F961A2B6605002D2FB1 /* ic_list_rcar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
