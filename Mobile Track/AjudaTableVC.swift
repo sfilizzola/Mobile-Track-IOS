@@ -25,12 +25,19 @@ class AjudaTableVC: UITableViewController, MFMailComposeViewControllerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func ajudaUsoPressed(sender: UIButton) {
+        
+        let view2 = self.storyboard!.instantiateViewControllerWithIdentifier("PageViewVC") as! UIViewController
+        
+        self.navigationController!.pushViewController(view2, animated: true)
+        
+    }
 
     // MARK: - Table view data source
 
     @IBAction func telPressed(sender: UIButton) {
         
-        UIApplication.sharedApplication().openURL(NSURL(string: "tel://3130296444")!)
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel://03130296444")!)
         
     }
     
@@ -93,7 +100,7 @@ class AjudaTableVC: UITableViewController, MFMailComposeViewControllerDelegate {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 4
+        return 3
     }
 
     /*

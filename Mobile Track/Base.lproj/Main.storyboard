@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -176,7 +176,7 @@
         <scene sceneID="xq0-yu-VYi">
             <objects>
                 <tableViewController id="9Zs-yp-VSY" customClass="AjudaTableVC" customModule="Mobile_Track" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WIe-dS-UX7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WIe-dS-UX7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,8 +188,11 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zZq-tD-jcm" id="mZj-12-UpD">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tel-64.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldh-c4-erO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="43"/>
+                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4A-ZF-6A4">
-                                                    <rect key="frame" x="62" y="7" width="128" height="30"/>
+                                                    <rect key="frame" x="62" y="0.0" width="530" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
                                                     <state key="normal" title="31 3029 6444">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -199,9 +202,6 @@
                                                         <action selector="telPressed:" destination="9Zs-yp-VSY" eventType="touchUpInside" id="Atf-ZG-6e3"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tel-64.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldh-c4-erO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="43"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -214,7 +214,7 @@
                                                     <rect key="frame" x="8" y="-2" width="45" height="44"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-G5-DtL">
-                                                    <rect key="frame" x="61" y="5" width="185" height="30"/>
+                                                    <rect key="frame" x="61" y="5" width="531" height="37"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
                                                     <state key="normal" title="ecxtrack@ecx.com.br">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,7 +236,7 @@
                                                     <rect key="frame" x="8" y="-2" width="45" height="48"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12y-Nm-osr">
-                                                    <rect key="frame" x="61" y="8" width="51" height="30"/>
+                                                    <rect key="frame" x="61" y="0.0" width="531" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
                                                     <state key="normal" title="Chat">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -244,28 +244,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="chatPressed:" destination="9Zs-yp-VSY" eventType="touchUpInside" id="dxT-49-dFT"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ecx-38-rJI">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecx-38-rJI" id="aNG-bI-kCe">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comousar-64.png" translatesAutoresizingMaskIntoConstraints="NO" id="NGW-pc-y6Q">
-                                                    <rect key="frame" x="8" y="-2" width="45" height="48"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihv-Md-xI1">
-                                                    <rect key="frame" x="61" y="4" width="105" height="35"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
-                                                    <state key="normal" title="Ajuda de uso">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="chatPressed:" destination="9Zs-yp-VSY" eventType="touchUpInside" id="XJV-eL-WQM"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -284,6 +262,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8z-5f-KTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3124" y="974"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="gDa-Sz-gHz">
+            <objects>
+                <pageViewController storyboardIdentifier="PageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="rgw-mV-PFS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4l-zj-QDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3774" y="972"/>
+        </scene>
+        <!--Page ViewVC-->
+        <scene sceneID="RiA-t9-H1d">
+            <objects>
+                <viewController storyboardIdentifier="PageViewVC" id="Elo-jF-vag" customClass="PageViewVC" customModule="Mobile_Track" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pzF-Qs-U2N"/>
+                        <viewControllerLayoutGuide type="bottom" id="leG-Uv-cyx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sG6-Zc-wm9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKK-6X-XaM">
+                                <rect key="frame" x="246" y="550" width="109" height="30"/>
+                                <state key="normal" title="Começar o guia">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedStartAgain:" destination="Elo-jF-vag" eventType="touchUpInside" id="EKI-97-upg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fKK-6X-XaM" secondAttribute="bottom" constant="20" symbolic="YES" id="5Zp-eW-X9m"/>
+                            <constraint firstItem="fKK-6X-XaM" firstAttribute="centerX" secondItem="sG6-Zc-wm9" secondAttribute="centerX" id="mBh-Pi-NYQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8i4-5M-r6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3124" y="1668"/>
+        </scene>
+        <!--Page ContentVC-->
+        <scene sceneID="5cV-Kw-TR0">
+            <objects>
+                <viewController storyboardIdentifier="PageContentVC" id="Ans-i9-M1t" customClass="PageContentVC" customModule="Mobile_Track" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJM-i4-DEY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y5g-OV-vhT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3xG-xB-1LA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-hX-Jsg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="542"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="dqB-hX-Jsg" secondAttribute="centerY" constant="29" id="3Ky-KJ-h25"/>
+                            <constraint firstAttribute="centerX" secondItem="dqB-hX-Jsg" secondAttribute="centerX" id="6UC-aS-K1X"/>
+                            <constraint firstItem="dqB-hX-Jsg" firstAttribute="top" secondItem="fJM-i4-DEY" secondAttribute="bottom" constant="-20" id="HnI-Um-Etz"/>
+                            <constraint firstAttribute="trailing" secondItem="dqB-hX-Jsg" secondAttribute="trailing" id="jPe-1i-eJN"/>
+                            <constraint firstItem="dqB-hX-Jsg" firstAttribute="leading" secondItem="3xG-xB-1LA" secondAttribute="leading" id="mNv-Vm-wb3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgGuia" destination="dqB-hX-Jsg" id="aJE-fj-msB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEE-4j-kt2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3774" y="1668"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mip-l8-IxU">
@@ -472,7 +524,6 @@
         <image name="Email-64.png" width="64" height="64"/>
         <image name="Tel-64.png" width="64" height="64"/>
         <image name="chat-64.png" width="64" height="64"/>
-        <image name="comousar-64.png" width="64" height="64"/>
         <image name="track_logo.png" width="2598" height="454"/>
     </resources>
     <inferredMetricsTieBreakers>
