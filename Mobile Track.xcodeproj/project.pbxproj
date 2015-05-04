@@ -690,7 +690,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Helpshift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
 			};
 			name = Debug;
 		};
@@ -708,7 +708,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Helpshift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
 			};
 			name = Release;
 		};
