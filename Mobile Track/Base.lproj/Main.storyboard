@@ -288,7 +288,7 @@
         <!--Page View Controller-->
         <scene sceneID="gDa-Sz-gHz">
             <objects>
-                <pageViewController storyboardIdentifier="PageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="max" id="rgw-mV-PFS" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageVC" autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" modalTransitionStyle="crossDissolve" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" doubleSided="YES" id="rgw-mV-PFS" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4l-zj-QDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3774" y="972"/>
@@ -304,22 +304,7 @@
                     <view key="view" contentMode="scaleToFill" id="sG6-Zc-wm9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKK-6X-XaM">
-                                <rect key="frame" x="246" y="550" width="109" height="30"/>
-                                <state key="normal" title="Começar o guia">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressedStartAgain:" destination="Elo-jF-vag" eventType="touchUpInside" id="EKI-97-upg"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="fKK-6X-XaM" secondAttribute="bottom" constant="20" symbolic="YES" id="5Zp-eW-X9m"/>
-                            <constraint firstItem="fKK-6X-XaM" firstAttribute="centerX" secondItem="sG6-Zc-wm9" secondAttribute="centerX" id="mBh-Pi-NYQ"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i4-5M-r6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -338,17 +323,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-hX-Jsg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-hX-Jsg">
+                                <rect key="frame" x="0.0" y="43" width="600" height="557"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="dqB-hX-Jsg" secondAttribute="centerY" constant="10" id="3Ky-KJ-h25"/>
+                            <constraint firstAttribute="centerY" secondItem="dqB-hX-Jsg" secondAttribute="centerY" constant="-21.5" id="3Ky-KJ-h25"/>
                             <constraint firstAttribute="centerX" secondItem="dqB-hX-Jsg" secondAttribute="centerX" id="6UC-aS-K1X"/>
-                            <constraint firstItem="dqB-hX-Jsg" firstAttribute="top" secondItem="fJM-i4-DEY" secondAttribute="bottom" constant="-20" id="HnI-Um-Etz"/>
-                            <constraint firstAttribute="trailing" secondItem="dqB-hX-Jsg" secondAttribute="trailing" id="jPe-1i-eJN"/>
-                            <constraint firstItem="dqB-hX-Jsg" firstAttribute="leading" secondItem="3xG-xB-1LA" secondAttribute="leading" id="mNv-Vm-wb3"/>
+                            <constraint firstItem="dqB-hX-Jsg" firstAttribute="bottom" secondItem="Y5g-OV-vhT" secondAttribute="top" id="74L-AL-uTo"/>
+                            <constraint firstItem="dqB-hX-Jsg" firstAttribute="leading" secondItem="3xG-xB-1LA" secondAttribute="leading" id="80t-Ol-eaU"/>
                         </constraints>
                     </view>
                     <connections>
@@ -357,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEE-4j-kt2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3774" y="1668"/>
+            <point key="canvasLocation" x="3774" y="1685"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mip-l8-IxU">

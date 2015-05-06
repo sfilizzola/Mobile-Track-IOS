@@ -15,15 +15,13 @@ class PageContentVC: UIViewController {
     
     var pageIndex: NSInteger = 0
     var imagem: String = ""
-    var titulo: String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.imgGuia.image = UIImage(named: self.imagem)
-        //self.lblTitulo.text = titulo
-        
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {

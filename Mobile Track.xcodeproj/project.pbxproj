@@ -76,11 +76,9 @@
 		EAE0607D1AD4BDE4005A6015 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE0607C1AD4BDE4005A6015 /* QuickLook.framework */; };
 		EAE0607F1AD4BDEB005A6015 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE0607E1AD4BDEB005A6015 /* MessageUI.framework */; };
 		EAE060841AD4BF57005A6015 /* HelpshiftLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAE060821AD4BF57005A6015 /* HelpshiftLocalizable.strings */; };
+		FB1707881AF937B400E022C2 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1707861AF937B400E022C2 /* 01.png */; };
+		FB1707891AF937B400E022C2 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1707871AF937B400E022C2 /* 02.png */; };
 		FB32447C1AF114D50019C4ED /* PageContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB32447B1AF114D50019C4ED /* PageContentVC.swift */; };
-		FB3244811AF119E20019C4ED /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB32447D1AF119E20019C4ED /* page1.png */; };
-		FB3244821AF119E20019C4ED /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = FB32447E1AF119E20019C4ED /* page2.png */; };
-		FB3244831AF119E20019C4ED /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = FB32447F1AF119E20019C4ED /* page3.png */; };
-		FB3244841AF119E20019C4ED /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3244801AF119E20019C4ED /* page4.png */; };
 		FB3244861AF11B760019C4ED /* PageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3244851AF11B760019C4ED /* PageViewVC.swift */; };
 		FBEC7D531AD7291B00DDC74F /* AjudaTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */; };
 /* End PBXBuildFile section */
@@ -171,11 +169,9 @@
 		EAE0607E1AD4BDEB005A6015 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EAE060801AD4BE08005A6015 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		EAE060831AD4BF57005A6015 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = pt; path = HelpshiftLocalizable.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		FB1707861AF937B400E022C2 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		FB1707871AF937B400E022C2 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
 		FB32447B1AF114D50019C4ED /* PageContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentVC.swift; sourceTree = "<group>"; };
-		FB32447D1AF119E20019C4ED /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
-		FB32447E1AF119E20019C4ED /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
-		FB32447F1AF119E20019C4ED /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
-		FB3244801AF119E20019C4ED /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
 		FB3244851AF11B760019C4ED /* PageViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewVC.swift; sourceTree = "<group>"; };
 		FBEC7D521AD7291B00DDC74F /* AjudaTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AjudaTableVC.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -296,10 +292,8 @@
 		6BA9E5E919DC3D1900214063 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				FB32447D1AF119E20019C4ED /* page1.png */,
-				FB32447E1AF119E20019C4ED /* page2.png */,
-				FB32447F1AF119E20019C4ED /* page3.png */,
-				FB3244801AF119E20019C4ED /* page4.png */,
+				FB1707861AF937B400E022C2 /* 01.png */,
+				FB1707871AF937B400E022C2 /* 02.png */,
 				EA23B8691AEF016B006D792C /* comousar-64.png */,
 				EA6D95611ADDCF5600A0927E /* chat-64.png */,
 				EA6D955F1ADDCEC900A0927E /* Email-64.png */,
@@ -480,6 +474,7 @@
 				EAE060621AD4BD5D005A6015 /* HSConfirmBox@2x.png in Resources */,
 				EAE0605D1AD4BD5D005A6015 /* HSChatBubbleBlue@3x.png in Resources */,
 				EAE060501AD4BD5D005A6015 /* HS-camera-button@3x.png in Resources */,
+				FB1707891AF937B400E022C2 /* 02.png in Resources */,
 				EAE060671AD4BD5D005A6015 /* HSTutorialiPad@2x.png in Resources */,
 				EAE060511AD4BD5D005A6015 /* HS-delete-button.png in Resources */,
 				6BDA7F941A2B6605002D2FB1 /* ic_list_car.png in Resources */,
@@ -495,25 +490,22 @@
 				EAE060531AD4BD5D005A6015 /* HS-delete-button@3x.png in Resources */,
 				EAE0605B1AD4BD5D005A6015 /* HSChatBubbleBlue.png in Resources */,
 				EAE0605F1AD4BD5D005A6015 /* HSChatBubbleWhite@2x.png in Resources */,
+				FB1707881AF937B400E022C2 /* 01.png in Resources */,
 				EAE060561AD4BD5D005A6015 /* HS-powered-by-logo.png in Resources */,
 				EA6D955E1ADDCE0F00A0927E /* Tel-64.png in Resources */,
 				EAE0604E1AD4BD5D005A6015 /* HS-camera-button.png in Resources */,
 				EAE0604B1AD4BD5D005A6015 /* HS-Attachment.png in Resources */,
 				EAE0605C1AD4BD5D005A6015 /* HSChatBubbleBlue@2x.png in Resources */,
 				EAE060841AD4BF57005A6015 /* HelpshiftLocalizable.strings in Resources */,
-				FB3244831AF119E20019C4ED /* page3.png in Resources */,
 				EAE060571AD4BD5D005A6015 /* HS-powered-by-logo@2x.png in Resources */,
 				EAE0604D1AD4BD5D005A6015 /* HS-Attachment@3x.png in Resources */,
 				EAE060551AD4BD5D005A6015 /* HS-no-connection@2x.png in Resources */,
-				FB3244821AF119E20019C4ED /* page2.png in Resources */,
-				FB3244841AF119E20019C4ED /* page4.png in Resources */,
 				6BA9E5E819DC3D1300214063 /* track_logo.png in Resources */,
 				EAE060651AD4BD5D005A6015 /* HSTutorial@3x.png in Resources */,
 				EAE0604F1AD4BD5D005A6015 /* HS-camera-button@2x.png in Resources */,
 				EA23B86A1AEF016B006D792C /* comousar-64.png in Resources */,
 				EAE060641AD4BD5D005A6015 /* HSTutorial@2x.png in Resources */,
 				EA6D95601ADDCEC900A0927E /* Email-64.png in Resources */,
-				FB3244811AF119E20019C4ED /* page1.png in Resources */,
 				6BDA7F961A2B6605002D2FB1 /* ic_list_rcar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,7 +682,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
 			};
 			name = Debug;
 		};
@@ -708,7 +700,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgontijo/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viniciusgont/Documents/Projetos/Mobile-Track-IOS/Mobile Track/Header.h";
 			};
 			name = Release;
 		};

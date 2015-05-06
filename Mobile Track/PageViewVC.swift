@@ -11,19 +11,16 @@ import UIKit
 class PageViewVC: UIViewController, UIPageViewControllerDataSource {
 
     var pageVC: UIPageViewController?
-    var pageTitles: [String]?
     var pageImages: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Create the data model
-        pageTitles = ["Over 200 Tips and Tricks", "Discover Hidden Features", "Bookmark Favorite Tip", "Free Regular Update"];
-        pageImages = ["page1.png", "page2.png", "page3.png", "page4.png"];
+        pageImages = ["01.png", "02.png"];
         
         // Create page view controller
         self.pageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PageVC") as? UIPageViewController
-
+        
         //self.pageVC! = self.storyboard!.instantiateViewControllerWithIdentifier("PageVC") as! UIPageViewController
         
         
@@ -48,35 +45,25 @@ class PageViewVC: UIViewController, UIPageViewControllerDataSource {
         appearance.pageIndicatorTintColor = UIColor.grayColor()
         appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
         appearance.backgroundColor = UIColor.darkGrayColor()
-
     }
     
-    private func getItemController(itemIndex: Int) -> PageContentVC? {
-        
-        if (itemIndex < 0 || self.pageTitles!.count == 0 || itemIndex >= self.pageTitles?.count) {
-            return nil;
-        }
-        
-        let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("PageContentVC") as! PageContentVC
-            
-        pageItemController.pageIndex = itemIndex
-        pageItemController.titulo = self.pageTitles![itemIndex]
-        pageItemController.imagem = self.pageImages![itemIndex]
-        return pageItemController
-        
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func pressedStartAgain(sender: UIButton) {
+    private func getItemController(itemIndex: Int) -> PageContentVC? {
         
-        let startingVC: PageContentVC = self.getItemController(0)!
-        let startingViewControllers: NSArray = [startingVC]
+        if (itemIndex < 0 || self.pageImages!.count == 0 || itemIndex >= self.pageImages?.count) {
+            return nil;
+        }
         
-        self.pageVC!.setViewControllers(startingViewControllers as [AnyObject], direction: UIPageViewControllerNavigationDirection.Reverse, animated: false, completion: nil)
+        let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("PageContentVC") as! PageContentVC
+        
+        pageItemController.pageIndex = itemIndex
+        pageItemController.imagem = self.pageImages![itemIndex]
+        return pageItemController
+        
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
@@ -87,14 +74,14 @@ class PageViewVC: UIViewController, UIPageViewControllerDataSource {
             return nil;
         }
         
-        itemController.pageIndex--
+        //itemController.pageIndex--
+        //return getItemController(itemController.pageIndex)
         
-        if (itemController.pageIndex == self.pageTitles?.count) {
-            return nil;
+        if itemController.pageIndex > 0 {
+            return getItemController(itemController.pageIndex-1)
         }
         
-        return getItemController(itemController.pageIndex)
-
+        return nil
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
@@ -105,13 +92,13 @@ class PageViewVC: UIViewController, UIPageViewControllerDataSource {
             return nil;
         }
         
-        itemController.pageIndex++
+        //itemController.pageIndex++
         
-        if (itemController.pageIndex == self.pageTitles?.count) {
-            return nil;
+        if itemController.pageIndex+1 < pageImages?.count {
+            return getItemController(itemController.pageIndex+1)
         }
         
-        return getItemController(itemController.pageIndex)
+        return nil
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
