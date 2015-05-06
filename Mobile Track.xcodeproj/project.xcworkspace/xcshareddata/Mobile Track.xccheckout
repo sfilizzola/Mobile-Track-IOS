@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7A84E33F9206185BCD4EFAD65335FB6018CF6F6C</key>
-		<string>https://github.com/sfilizzola/Mobile-Track.git</string>
+		<string>https://github.com/sfilizzola/Mobile-Track-IOS</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Mobile Track.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/sfilizzola/Mobile-Track.git</string>
+	<string>https://github.com/sfilizzola/Mobile-Track-IOS</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>7A84E33F9206185BCD4EFAD65335FB6018CF6F6C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Mobile%20Track</string>
+			<string>Mobile-Track-IOS</string>
 		</dict>
 	</array>
 </dict>

@@ -96,7 +96,6 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         
         
         if veiculoSelecionado != nil {
-            NSLog("Veiculo: \(veiculoSelecionado!.Placa)")
             self.navigationItem.title = veiculoSelecionado!.Placa
             self.activityIndicator.startAnimating()
             NSThread.detachNewThreadSelector("PlotaVeiculo", toTarget: self, withObject: nil)
@@ -165,7 +164,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         if !(annotation is PontoMapa) {
             return nil
         }
-        let cpa = annotation as PontoMapa
+        let cpa = annotation as! PontoMapa
         
         if !cpa.isCarro {
             return nil
@@ -222,7 +221,7 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         
         var trajetosAction:UIAlertAction = UIAlertAction(title: "Trajetos", style: UIAlertActionStyle.Default, handler:
             {(alert:UIAlertAction!) in
-                var tfvc = self.storyboard?.instantiateViewControllerWithIdentifier("Trajetos") as TrajetosFormViewController
+                var tfvc = self.storyboard?.instantiateViewControllerWithIdentifier("Trajetos") as! TrajetosFormViewController
                 tfvc.TopViewControler = self
                 self.presentViewController(tfvc, animated: true, completion: nil)
         })
@@ -250,10 +249,16 @@ class MainViewController: UIViewController, MKMapViewDelegate {
         var cancelar:UIAlertAction = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler:
             nil)
         
+        var AddAjuda:UIAlertAction = UIAlertAction(title: "Ajuda", style: UIAlertActionStyle.Default, handler:
+            {(alert:UIAlertAction!) in
+                self.performSegueWithIdentifier("segueToAjuda", sender: self)
+        })
+        
         
         menuFuncoes.addAction(atualizarAction)
         menuFuncoes.addAction(rotaAction)
         menuFuncoes.addAction(trajetosAction)
+        menuFuncoes.addAction(AddAjuda)
         menuFuncoes.addAction(sair)
         menuFuncoes.addAction(cancelar)
         

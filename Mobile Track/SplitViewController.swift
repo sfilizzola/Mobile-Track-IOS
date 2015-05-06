@@ -34,16 +34,22 @@ class SplitViewController: UISplitViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        var DetailVC:MainViewController?
         
         if segue.destinationViewController.isKindOfClass(MainViewController) {
-            var destViewController:MainViewController = segue.destinationViewController as MainViewController
+            var destViewController:MainViewController = segue.destinationViewController as! MainViewController
             destViewController.usuarioLogado = self.usuarioLogado
+            DetailVC = destViewController
         }
         
         if segue.destinationViewController.isKindOfClass(CarrosTableViewController)
         {
-            var destViewController:CarrosTableViewController = segue.destinationViewController as CarrosTableViewController
+            var destViewController:CarrosTableViewController = segue.destinationViewController as! CarrosTableViewController
             destViewController.usuarioLogado = self.usuarioLogado
+            if DetailVC != nil
+            {
+                destViewController.detailVC = DetailVC
+            }
         }
     }
    

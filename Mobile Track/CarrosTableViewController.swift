@@ -8,10 +8,13 @@
 
 import UIKit
 
-class CarrosTableViewController: UITableViewController {
+class CarrosTableViewController: UITableViewController, UISearchBarDelegate {
     
     var listaSelecionado:[Veiculo]?
     var usuarioLogado:Usuario?
+    var detailVC:MainViewController?
+    
+    @IBOutlet weak var busca: UISearchBar!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -19,18 +22,29 @@ class CarrosTableViewController: UITableViewController {
         //se for iPad
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad
         {
-            //var funcBarButton:UIBarButtonItem = UIBarButtonItem(title: "Funçoes", style: UIBarButtonItemStyle.Plain, target: , action: "DisparaFuncoes")
-            //self.navigationItem.rightBarButtonItem = funcBarButton;
+            if detailVC != nil
+            {
+                var funcBarButton:UIBarButtonItem = UIBarButtonItem(title: "Opções", style: UIBarButtonItemStyle.Plain, target: detailVC!, action: "DisparaFuncoes")
+                self.navigationItem.rightBarButtonItem = funcBarButton;
+            }
         }
         
+        if (listaSelecionado == nil)
+        {
+            NSThread.detachNewThreadSelector("ListaVeiculos", toTarget: self, withObject: nil)
+        }
+    }
+    
+    func ListaVeiculos ()
+    {
         var userPrefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
         var CodUsuarioLogado:Int = userPrefs.integerForKey("CodUsuarioLogado")
+
+        var DALVeiculos:Veiculos = Veiculos()
+        listaSelecionado = DALVeiculos.VeiculosPorUsuario(CodUsuarioLogado)
         
-        if (listaSelecionado == nil) {
-            var DALVeiculos:Veiculos = Veiculos()
-            listaSelecionado = DALVeiculos.VeiculosPorUsuario(CodUsuarioLogado)
-        }
+        //Agora precisa disso
+        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -72,7 +86,7 @@ class CarrosTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CelulaCarro", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("CelulaCarro", forIndexPath: indexPath) as! UITableViewCell
 
         let carroAtual:Veiculo = listaSelecionado![indexPath.row]
         
@@ -80,6 +94,21 @@ class CarrosTableViewController: UITableViewController {
         
         return cell
     }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        //TODO - filtra lista
+        /*listaSelecionado = listaSelecionado!.filter({
+            v in v.Placa!.        })*/
+        
+        NSLog(searchText)
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) // called when keyboard search button pressed
+    {
+        searchBar.resignFirstResponder()
+    }
+    
     
     
     /*
@@ -127,12 +156,13 @@ class CarrosTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow()
             {
+                busca.resignFirstResponder()
                 let carroSelecionado:Veiculo = listaSelecionado![indexPath.row] as Veiculo
-                let controler:MainViewController = segue.destinationViewController as MainViewController
+                let controler:MainViewController = segue.destinationViewController as! MainViewController
                 
                 controler.veiculoSelecionado = carroSelecionado
-                /*let object = objects[indexPath.row] as NSDate
-                let controller = (segue.destinationViewController as MainViewController).topViewController as MainViewController
+                /*let object = objects[indexPath.row] as! NSDate
+                let controller = (segue.destinationViewController as! MainViewController).topViewController as! MainViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true*/
